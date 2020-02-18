@@ -27,6 +27,8 @@ let counter = function(arr) {
 };
 
 // exports
-module.exports.log = log;
-module.exports.timer = timerFunc;
-module.exports.ninjas = counter;
+module.exports = {
+  log: log,
+  timer: timerFunc,
+  ninjas: counter
+};
