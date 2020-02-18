@@ -1,3 +1,4 @@
-var logger = require("./new");
+var newMod = require("./new");
 
-logger.log("message");
+newMod.log("message here");
+newMod.timer();
