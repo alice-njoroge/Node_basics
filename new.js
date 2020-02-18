@@ -1,7 +1,14 @@
+/**
+ * Message log function
+ * @param {*} message
+ */
 function log(message) {
   console.log(message);
 }
 
+/**
+ * Timer function
+ */
 const timerFunc = function() {
   let time = 0;
   let timer = setInterval(() => {
@@ -14,5 +21,12 @@ const timerFunc = function() {
   }, 2000);
 };
 
+// array ninja function
+let counter = function(arr) {
+  return "there are " + arr.length + " ninjas here";
+};
+
+// exports
 module.exports.log = log;
 module.exports.timer = timerFunc;
+module.exports.ninjas = counter;
